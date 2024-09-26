@@ -89,11 +89,15 @@ nav {
     font-family: epilogue;
     font-size: 1rem;
     font-weight: 500;
-    text-transform: uppercase;  
+    text-transform: uppercase; /*deixa o texto em maisculo*/  
 }
 
 .marrom {
     color: #A45A49;  
+}
+
+.amarelo {
+    color: #E7A80E;
 }
 
 h1 {
@@ -142,5 +146,123 @@ button {
 }
 
 .receitas {
-    
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1120px;
+    padding: 3rem 2rem;
+    margin: auto;
+}
+
+.receitas-cabeça {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.receitas-titulo {
+    font-family: montserrat;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFF2E7;
+}
+
+.receitas-subtitulo {
+    color: #C7BAB3;
+    font-family: inter;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.card-container {
+    padding: 0rem 10rem;
+    display: flex;
+    flex-direction: row; /*coloca na horizontal*/
+    flex-wrap: wrap;/*serve para quebrar o codigo de cima*/
+    gap: 2rem;
+}
+
+.receitas-card {
+    background: #241A1C;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-basis: 29rem;
+    margin-top: 2rem;
+}
+
+.receitas-card-cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.detalhes-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.receita-titulo {
+    color: #FFF2E7;
+    font-family: montserrat;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.receita-avaliacao {
+    color: #756A67;
+    font-family: inter;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.receita-descrição {
+    color: #C7BAB3;
+    font-family: inter;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.receita-autor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.receita-autor > img {
+    border-radius: 20rem;
+    width: 1.5rem;
+}
+
+.nome-autor {
+    color: #C7BAB3;
+    font-family: inter;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+footer {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: #23181A;
+}
+
+.footer-copy {
+    font-family: inter;
+    font-size: 1rem;
+    text-transform: uppercase; /*deixa o texte em maiuscolo*/
+}
+
+.footer-autor {
+    font-family: inter;
+    font-size: 1rem;
 }
